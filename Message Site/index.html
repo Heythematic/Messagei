@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Message Site/style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <section class="text__content">
+        <h2>Send a message to <strong>Caleb</strong>✌️</h2>
+    </section>
+
+    <form action="https://formspree.io/f/meqwojny" method="POST" class="form__main">
+        <div class="form__content">
+        <label name="name" class="form__name">Full Name</label>
+        <input type="text" class="form__placeholder" placeholder="Full name" required>
+    </div>
+    <div class="form__content">
+        <label name="email" class="form__name">Email</label>
+        <input type="text" class="form__placeholder" placeholder="Email Address" required>
+    </div>
+    <div class="form__content">
+        <label name="message" class="form__name">Message</label>
+        <input type="text" class="message__placeholder" placeholder="Message" required>
+    </div>
+
+    <div class="age__bar">
+        <input type="text" >
+    </div>
+
+    <p class="notice__text">Notice! while filling this form, your age remains personal and won't be visible to me.</p>
+    <div class="form__btn">
+        <button type="submit" class="btn">Submit✅</button>
+    </div>
+    </form>
+    
+    <script>
+      const age = document.querySelector('.age__bar');
+      const askAge = prompt('How old are you?');
+
+     age.innerHTML = 'You are ' + askAge + ' years old';
+    </script>
+</body>
+</html>
